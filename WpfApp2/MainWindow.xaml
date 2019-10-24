@@ -161,9 +161,12 @@
                 </Trigger>
             </ControlTemplate.Triggers>
         </ControlTemplate>
+        <Style TargetType="local:ColorSlider">
+            <Setter Property="Template" Value="{DynamicResource ColorSliderControlTemplate}" />
+        </Style>
     </Window.Resources>
     <StackPanel Orientation="Vertical">
-    <local:ColorSlider x:Name="MyColorSlider" Template="{DynamicResource ColorSliderControlTemplate}" Width="200" Height="50"
+    <local:ColorSlider x:Name="MyColorSlider" Width="200" Height="50"
                        Color1="Red" Color2="Green" Color3="Blue" Width1="68" Width2="66" Width3="66"></local:ColorSlider>
     <Button Click="Button_Click" Width="80">Click Me</Button>
     </StackPanel>
